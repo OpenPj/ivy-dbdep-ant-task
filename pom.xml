@@ -23,7 +23,7 @@
 	<groupId>com.sourcesense</groupId>
 	<artifactId>ivy-dbdep-ant-task</artifactId>
 	<packaging>jar</packaging>
-	<version>1.0</version>
+	<version>0.2</version>
 	<inceptionYear>2009</inceptionYear>
 	<licenses>
 		<license>
@@ -32,6 +32,7 @@
 		</license>
 	</licenses>
 	<name>Apache Ivy Database Dependencies Ant Task</name>
+	<description>This plugin allows you to store in a easy way all the project dependencies in your own database for software development monitoring and business intelligence purpose</description>
 	<url>http://code.google.com/p/ivy-dbdep-ant-task/</url>
 	<issueManagement>
 		<system>Google Code</system>
