@@ -1,0 +1,36 @@
+#labels Featured
+= How to install Apache Ivy Database Dependencies Plugin =
+
+This page is dedicated to show how to install Apache Ivy Database Dependencies Plugin. 
+
+==Database creation==
+Download and execute with a SQL client a script to create dbdep database, for MySQL you can execute [http://ivy-dbdep-ant-task.googlecode.com/files/setup_db.sql setup_db.sql] (you can find it in the plugin package distribution too).
+
+==Add all the dependencies on your Ant classpath==
+
+Add to you Ant classpath all the dependencies included in [http://ivy-dbdep-ant-task.googlecode.com/files/ivy-dbdep-ant-task-0.2-with-dependencies.zip dbdep with-dependencies package]
+
+==Configure your own Apache Ivy project==
+
+To enable dbdep plugin you must add this snippet on your Apache Ant file (build.xml):
+
+{{{
+
+<!-- ================================= 
+      target: Apache Ivy DbDep Plugin             
+     ================================= -->
+	<taskdef name="ApacheIvyDbDepAntTask" classname="com.sourcesense.ant.dbdep.task.IvyDbDepTask" />
+	<target name="ApacheIvyDbDep">
+		<ApacheIvyDbDepAntTask 
+                        databaseDriverClassName="driver.classname.package.dbms" 
+			databaseUrl="jdbc:dbms://ip:port/dbdep" 
+			databaseUsername="dbdep" 
+			databasePassword="dbdep" 
+			ivyFilePath="ivy.xml" 
+			environment="YOUR ENVIRONMENT NAME" 
+			project="YOUR PROJECT NAME">
+		</ApacheIvyDbDepAntTask>
+	</target>
+
+}}}
+
