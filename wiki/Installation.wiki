@@ -1,5 +1,5 @@
 #labels Featured
-= How to install Apache Ivy Database Dependencies Plugin =
+= How to install Apache Ivy Database Dependencies Plugin (dbdep for Ivy)=
 
 This page is dedicated to show how to install Apache Ivy Database Dependencies Plugin. 
 
@@ -33,4 +33,3 @@ To enable dbdep plugin you must add this snippet on your Apache Ant file (build.
 	</target>
 
 }}}
-
