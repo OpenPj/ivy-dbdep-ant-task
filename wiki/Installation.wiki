@@ -6,9 +6,28 @@ This page is dedicated to show how to install Apache Ivy Database Dependencies P
 ==Database creation==
 Download and execute with a SQL client a script to create dbdep database, for MySQL you can execute [http://ivy-dbdep-ant-task.googlecode.com/files/setup_db.sql setup_db.sql] (you can find it in the plugin package distribution too).
 
-==Add all the dependencies on your Ant classpath==
+==Ant classpath==
 
-Add to you Ant classpath all the dependencies included in [http://ivy-dbdep-ant-task.googlecode.com/files/ivy-dbdep-ant-task-0.2-with-dependencies.zip dbdep with-dependencies package]
+Add to your Ant classpath all the dependencies included in [http://ivy-dbdep-ant-task.googlecode.com/files/ivy-dbdep-ant-task-0.2-with-dependencies.zip dbdep with-dependencies package], here you can see version and scope for each dependency:
+
+{{{
+com.sourcesense:ivy-dbdep-ant-task:jar:0.2
+[INFO] +- junit:junit:jar:3.8.1:test
+[INFO] +- org.springframework:spring:jar:2.5.6:compile
+[INFO] |  \- commons-logging:commons-logging:jar:1.1.1:compile
+[INFO] +- commons-dbcp:commons-dbcp:jar:1.2.2:compile
+[INFO] |  \- commons-pool:commons-pool:jar:1.3:compile
+[INFO] +- commons-digester:commons-digester:jar:1.8:compile
+[INFO] |  \- commons-beanutils:commons-beanutils:jar:1.7.0:compile
+[INFO] +- log4j:log4j:jar:1.2.15:compile
+[INFO] |  +- javax.mail:mail:jar:1.4:compile
+[INFO] |  |  \- javax.activation:activation:jar:1.1:compile
+[INFO] |  +- javax.jms:jms:jar:1.1:compile
+[INFO] |  +- com.sun.jdmk:jmxtools:jar:1.2.1:compile
+[INFO] |  \- com.sun.jmx:jmxri:jar:1.2.1:compile
+[INFO] \- org.apache.ant:ant:jar:1.7.1:compile
+[INFO]    \- org.apache.ant:ant-launcher:jar:1.7.1:compile
+}}}
 
 ==Configure your own Apache Ivy project==
 
