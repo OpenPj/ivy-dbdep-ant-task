@@ -29,6 +29,8 @@ com.sourcesense:ivy-dbdep-ant-task:jar:0.2
 [INFO]    \- org.apache.ant:ant-launcher:jar:1.7.1:compile
 }}}
 
+For more informations about dependencies you can visit [http://www.open4dev.com/storage/projects/ivy-dbdep-ant-task/dependencies.html Project's Website].
+
 ==Configure your own Apache Ivy project==
 
 To enable dbdep plugin you must add this snippet on your Apache Ant file (build.xml):
